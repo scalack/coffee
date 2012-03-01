@@ -3,7 +3,7 @@ say 2,13
 console.log say 1,2
 arrs = [1,3,2,5,4,7,18,9]
 
-####插入算法
+ 
 
 insertAlg= (arr)->
   len = arr.length
