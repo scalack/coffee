@@ -13,7 +13,6 @@ insertAlg= (arr)->
       arr[j] = arr[j-1]
       arr[j-1] = tem
 
-
 insertAlg2 = (arr)->
   len = arr.length
   for i in [1...len]
@@ -22,7 +21,8 @@ insertAlg2 = (arr)->
     while tem > arr[j-1] 
       arr[j] = arr[j-1]
       j--
-    arr[j] = tem
+    arr[j] = tem 
+    
     
 #####冒泡排序
 
