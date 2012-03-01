@@ -4,7 +4,7 @@ console.log say 1,2
 arrs = [1,3,2,5,4,7,18,9]
 
  
-
+#插入算法
 insertAlg= (arr)->
   len = arr.length
   for i in [1...len]
@@ -24,7 +24,7 @@ insertAlg2 = (arr)->
     arr[j] = tem 
     
     
-#####冒泡排序
+#冒泡排序
 
 bubbleSort = (arr)->
   len = arr.length
