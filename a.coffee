@@ -47,6 +47,15 @@ selectSort= (arr)->
     [arr[i],arr[min]] = [arr[min],arr[i]]     
 
 
+#快速排序
+
+qs = (arr)->
+  if arr.length <=1 then return arr
+  piv = arr[Math.round(arr.length >>1)]
+  left = arr.filter (x)-> x<piv
+  right = arr.filter (x)-> x>piv
+ 
+  (qs left).concat [piv],qs right
          
     
     
