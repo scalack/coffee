@@ -58,5 +58,12 @@ qs = (arr)->
   (qs left).concat [piv],qs right
          
     
+qs = (arr)->
+  if arr.length <=1 then return arr
+  left = (i for i in arr[1..] when i <arr[0])
+  right = (i for i in arr[1..] when i >= arr[0])
+  
+  (qs left).concat [arr[0]],qs right
+
     
     
