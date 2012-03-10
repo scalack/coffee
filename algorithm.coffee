@@ -27,9 +27,9 @@ insertAlg2 = (arr)->
 #冒泡排序
 
 bubbleSort = (arr)->
-  len = arr.length
+  len = arr.length-1
   for i in [0...len]
-    for j in [0...len-i-1]
+    for j in [0...len-i]
        if arr[j] > arr[j+1]
          [arr[j],arr[j+1]] = [arr[j+1],arr[j]]
          
